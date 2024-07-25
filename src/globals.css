@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(17, 21, 22);
+    color: rgb(196, 196, 196);
+    font-stretch:narrower;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.LoadingScreen{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: rgb(196, 196, 196);
+    font-stretch:narrower;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 3rem;
+}
+/* App.css */
+.Loader{
+    position: absolute;
+    right: 20%;
+}
+/* App.css */
+.fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+  }
+  /* App.css */
+.App {
+    overflow: hidden; /* Prevent scrollbars on the main container */
+  }
+  
+  .container {
+    position: relative;
+    overflow: hidden; /* Prevent scrollbars on the content container */
+  }
+  
+  .LoadingScreen, .MainContent {
+    position: absolute; /* Overlay content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  
+  .MainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }

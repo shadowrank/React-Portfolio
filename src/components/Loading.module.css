@@ -1,0 +1,26 @@
+/* styles/Loading.module.css */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    overflow: hidden;
+    margin-left: 7%;
+
+}
+
+.loadingText {
+    font-family: 'Helvetica';
+    font-size: 400%;
+    font-weight: 300;
+    line-height: 135%;
+}
+
+img {
+    position: absolute;
+    left: -10%;
+    position: relative;
+    width: 25%;
+    margin-right: 1rem; /* Adjust this value to change spacing between image and text */
+    filter: invert(0.8);
+}
