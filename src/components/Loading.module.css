@@ -1,4 +1,18 @@
 /* styles/Loading.module.css */
+@font-face {
+    font-family: 'Death Star';
+    src: url('../resources/fonts/DeathStar.OTF') format('opentype');
+    font-weight:100;
+    font-style:oblique;
+  }
+.theoutercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 35%;
+    margin-right: 4%;
+}  
 .container {
     position: relative;
     display: flex;
@@ -10,9 +24,9 @@
 }
 
 .loadingText {
-    font-family: 'Helvetica';
-    font-size: 400%;
-    font-weight: 300;
+    font-family: 'Death Star', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
     line-height: 135%;
 }
 
