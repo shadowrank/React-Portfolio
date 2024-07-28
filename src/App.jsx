@@ -1,37 +1,39 @@
 import { useState, useEffect } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
-import Loading from "./components/Loading";
-import './globals.css'; // Create this CSS file for transition styles
+import { useTransition, animated } from "react-spring";
+import Loading from "./components/preloader/Loading";
+import MainContent from "./components/MainContent/Content";
+
+import './globals.css'; // Ensure this file exists with necessary styles
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const transition = useTransition(isVisible, {
+    from: { opacity: 0, x:-100 , y:-250 },
+    enter: { opacity: 1, x:0 , y:0 },
+    leave: { opacity: 0, x: 100 , y: 250}
+  });
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 3000);
+    setIsVisible(true);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="App">
-      <TransitionGroup>
-        <CSSTransition
-          key={isLoading ? "loading" : "main"}
-          timeout={500}
-          classNames="fade"
-        >
-          {isLoading ? (
-            <div className="LoadingScreen">
-              <Loading />
-            </div>
+          {isLoading ? (transition((style, item) => {
+              return item ? <animated.div style={style} className="LoadingScreen">
+                <Loading />
+              </animated.div>
+              :
+               <></>
+          })
           ) : (
-            <div className="MainContent">
-              Main page is gonna be here soon stay tuned
-            </div>
+            <MainContent />
           )}
-        </CSSTransition>
-      </TransitionGroup>
     </div>
   );
 }
