@@ -11,13 +11,16 @@ export default function App() {
   const transition = useTransition(isVisible, {
     from: { opacity: 0, x:-100 , y:-250 },
     enter: { opacity: 1, x:0 , y:0 },
-    leave: { opacity: 0, x: 100 , y: 250}
+    leave: { opacity: 0, x: 100 , y: 250},
+    config: { duration: 350 }
   });
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+      document.body.style.backgroundColor = "#bab9b9";
+      document.body.style.color = "black";
+    }, 2000);
     setIsVisible(true);
     return () => clearTimeout(timer);
   }, []);

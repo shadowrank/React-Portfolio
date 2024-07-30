@@ -30,11 +30,27 @@
     line-height: 135%;
 }
 
-img {
+.logo {
     position: absolute;
     left: -10%;
     position: relative;
     width: 25%;
     margin-right: 1rem; /* Adjust this value to change spacing between image and text */
     filter: invert(0.8);
+}
+@media (max-width: 456px) {
+    .loadingText {
+        font-family: 'Death Star', sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 135%;
+    }
+}
+@media (max-width: 373px) {
+    .loadingText {
+        font-family: 'Death Star', sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 135%;
+    }
 }
