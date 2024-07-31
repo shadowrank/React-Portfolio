@@ -10,18 +10,21 @@ export default function Landing() {
             const t1=gsap.timeline({repeat:-1});
             titles.forEach((title)=>{
                 const splitTitle=new SplitTitleJS(title);
+                let x=10;
+                splitTitle.chars.forEach(char=>{
+                  char.style.color =`rgb(${101+x},${74+x},${74+x})`;
+                  x+=20; })
                 t1.from(splitTitle.chars,{
                     opacity:0,
                     y:10,
                     rotateX:-90,
-                    stagger:0.02,
+                    stagger:0.01,
 
                 },"<")
 
 
                 .to(splitTitle.chars,{
                     opacity:1,
-                    stagger:0.01,
 
                 },"<1"
                 )
@@ -53,7 +56,7 @@ export default function Landing() {
         <div className={styles.topleftlogo}></div>
         <div className={styles.myname}>
           Rayene <br /> Kanoun <br />
-          <div className={styles.job}>Software Engineering Student,<p style={{ color: "white" }}>Freelancer</p></div>
+          <div className={styles.job}>Software Engineering Student,<p style={{ color: "#A48C8C" }}>Freelancer</p></div>
         <MagneticLinks className={styles.links}  >
           <ul>
             <li><a href="https://www.facebook.com/rayene.kanoun/" target="_blank"><FbIcon width="40" height="40" /></a></li>

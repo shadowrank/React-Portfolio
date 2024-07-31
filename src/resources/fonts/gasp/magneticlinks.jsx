@@ -3,7 +3,6 @@ import gsap from "gsap";
 
 export default function MagneticLinks({ children, className }) {
   const magnetic = useRef(null);
-  console.log(children);
   useEffect(() => {
     const xTo = gsap.quickTo(magnetic.current, "x", {
       duration: 0.25,

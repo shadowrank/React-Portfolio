@@ -1,7 +1,7 @@
 export default function Description() {
     return (
-        <div>
-        <h1>Hi</h1>
+        <div style={{padding:"0px"}}>
+        <h1 >Hi</h1>
         </div>
     );
     }

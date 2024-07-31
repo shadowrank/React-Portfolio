@@ -9,10 +9,10 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: { opacity: 0, x:-100 , y:-250 },
+    from: { opacity: 0 , y:-50 },
     enter: { opacity: 1, x:0 , y:0 },
-    leave: { opacity: 0, x: 100 , y: 250},
-    config: { duration: 350 }
+    leave: { opacity: 0 },
+    config: { duration: 150 }
   });
 
   useEffect(() => {

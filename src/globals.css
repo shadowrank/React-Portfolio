@@ -1,7 +1,4 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+
 /* globals.css */
 
 /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
@@ -33,30 +30,21 @@ html, body {
 
 /* App container */
 .App {
-  overflow-y: auto;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Loading screen styles */
-.LoadingScreen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 /* Main content styles */
-.MainContent {
-  padding: 20px; /* Add padding for better appearance */
-  background-color: red;
-}
+
 
 body{
     background-color: rgb(17, 21, 22);
     color: rgb(196, 196, 196);
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+
     overflow-x:hidden ;
 
 

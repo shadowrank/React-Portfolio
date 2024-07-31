@@ -1,5 +1,5 @@
 import styles from "./Loading.module.css";
-import logo from "./Logo.png";
+import logo from "./RKlogo.png";
 import { hourglass } from "ldrs";
 hourglass.register();
 
