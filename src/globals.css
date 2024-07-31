@@ -33,8 +33,7 @@ html, body {
 
 /* App container */
 .App {
-  
-  overflow-y: auto; /* Ensure vertical scrollbar */
+  overflow-y: auto;
 }
 
 /* Loading screen styles */

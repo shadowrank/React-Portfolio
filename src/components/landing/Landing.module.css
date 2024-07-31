@@ -1,0 +1,106 @@
+.container {
+    overflow-y: auto;
+}
+
+.loula {
+    position: relative; /* Make .loula the reference point for absolutely positioned children */
+    width: 100vw;
+    height: 120vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('./portfolio-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow:5px 5px 30px rgb(118, 116, 116);
+
+
+}
+
+.topleftlogo {
+    position: absolute;
+    top: 0.5rem; /* Adjusted from vh to rem for better scaling */
+    left: 3.74vw; /* Adjusted from vw to rem for better scaling */
+    width: 7rem;
+    height: 7rem;
+    background: url('./Logo.png') no-repeat center center;
+    background-size: cover;
+    z-index: 10;
+    filter: invert(1);
+}
+
+.myname {
+    font-family:sans-serif ;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-right: 10%;
+    position: absolute;
+    bottom: 30%; /* Position it near the bottom */
+    left: 6.14vw; /* Adjust position as needed */
+    color: rgb(230, 230, 230);
+}
+p{
+    margin:0;
+    text-shadow: 4px 4px 7px rgba(255, 255, 255, 0.37);
+    text-wrap: wrap;
+}
+.job{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.links{
+    padding: 0;
+    max-width: 83%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    min-width: 250px;
+}
+
+.links ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    list-style-type: none;
+    padding: 2% 0 1% 0;
+
+    
+
+}
+.links ul li {
+    font: none;
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+
+}
+
+
+.whatIlike {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content;
+    padding: 20px;
+    background-color: white; /* Optional: to separate content visually from .loula */
+}
+@media (max-width: 465px) {
+    .topleftlogo {
+        height: 5rem;
+        top: 3rem;
+        left: -3vw;
+    }
+    .links ul li {
+        font-size: 0.7rem;
+    }
+    .links{
+        width: 83%;
+    }
+}
