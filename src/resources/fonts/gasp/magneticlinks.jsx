@@ -16,13 +16,13 @@ export default function MagneticLinks({ children, className }) {
     const mouseMove = (e) => {
       const { clientX, clientY } = e;
       const { height, width, left, top } = magnetic.current.getBoundingClientRect();
-      const x = clientX - (left + width / 2);
+      const x = clientX - (left + width /2 );
       const y = clientY - (top + height / 2);
-      xTo(x / 8);
-      yTo(y / 4);
+      xTo(x /7);
+      yTo(y / 7);
       gsap.to(magnetic.current, {
         scale: 1.05,
-        boxShadow: "1px 1px 55px rgb(10, 19, 9)",
+        boxShadow: "1px 1px 55px rgb(20, 20, 20)",
       });
     };
 

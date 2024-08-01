@@ -20,7 +20,7 @@ export default function App() {
       setIsLoading(false);
       document.body.style.backgroundColor = "#bab9b9";
       document.body.style.color = "black";
-    }, 2000);
+    },2000);
     setIsVisible(true);
     return () => clearTimeout(timer);
   }, []);

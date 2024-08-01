@@ -10,8 +10,9 @@
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url('./portfolio-background-image.jpg') no-repeat center center;
-    background-size: cover;
+    url('./4.jpg') no-repeat ;
+    background-size:cover ;
+    background-position: 60% 10%;
     box-shadow:5px 5px 30px rgb(118, 116, 116);
 
 
@@ -50,8 +51,8 @@ p{
 .links{
     padding: 0;
     max-width: 83%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(143, 142, 142, 0.1),rgba(255, 255, 255, 0));
+    backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -84,13 +85,6 @@ p{
 }
 
 
-.whatIlike {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content;
-    padding: 20px;
-    background-color: white; /* Optional: to separate content visually from .loula */
-}
 @media (max-width: 465px) {
     .topleftlogo {
         width: 1.5rem;
@@ -108,8 +102,8 @@ p{
     .topleftlogo {
         display: none;
     }
-    .myname {
-        font-size: 2rem;
+    .myname, .job {
+        font-size: 7vh;
     }
 
 }	

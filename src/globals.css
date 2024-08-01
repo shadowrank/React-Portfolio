@@ -63,12 +63,12 @@ body{
  
 .LoadingScreen{
   height: 100vh;
-    display: flex;
-    align-items: center;
-    color: rgb(196, 196, 196);
-    font-stretch:narrower;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 3rem;
+  display: flex;
+  align-items: center;
+  color: rgb(196, 196, 196);
+  font-stretch:narrower;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 3rem;
 }
 
 
